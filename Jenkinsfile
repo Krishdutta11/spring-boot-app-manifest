@@ -21,7 +21,7 @@ pipeline {
                         sh "cat deployment.yaml"
                         
                         // Update deployment.yaml with the new Docker image tag
-                        sh "sed -i 's+krishdutta1177/test.*+krishdutta1177/test:${DOCKERTAG}+g' deployment.yaml"
+                        sh "sed -i 's+krishdutta1177/ultimate-cicd.*+krishdutta1177/ultimate-cicd:${DOCKERTAG}+g' deployment.yaml"
                         
                         // Display content of deployment.yaml after modification
                         sh "cat deployment.yaml"
